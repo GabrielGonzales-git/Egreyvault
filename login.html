@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EGREY VAULT LOGIN</title>
+</head>
+<body style="background:black; color:white; text-align:center; padding-top:15%;">
+  <h1>Login to Vault</h1>
+  <input type="password" id="pw" placeholder="Enter Password">
+  <button onclick="check()">Enter</button>
+  <p id="msg"></p>
+  <script>
+    function check() {
+      var pw = document.getElementById('pw').value;
+      if(pw === "greykey2025") {
+        window.location.href = "vault.html";
+      } else {
+        document.getElementById("msg").innerText = "Access Denied";
+      }
+    }
+  </script>
+</body>
+</html>

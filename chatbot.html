@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EGREY AI</title>
+</head>
+<body style="background:#000; color:#fff; padding:20px; font-family:monospace;">
+  <h2>Ask the Vault</h2>
+  <input type="text" id="question" placeholder="Type your question..." style="width:80%;">
+  <button onclick="respond()">Ask</button>
+  <p id="answer"></p>
+  <script>
+    function respond() {
+      let q = document.getElementById("question").value.toLowerCase();
+      let a = "This is a demo AI response.";
+      if (q.includes("stealth")) a = "Use offshore hosting and wallet masking.";
+      if (q.includes("crypto")) a = "Convert to Monero and bridge using stealth cards.";
+      document.getElementById("answer").innerText = a;
+    }
+  </script>
+</body>
+</html>
